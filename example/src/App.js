@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import ExampleComponent from 'react-progressbar-semicircle'
+import SemiCircleProgressBar from "react-progressbar-semicircle";
 
 export default class App extends Component {
-  render () {
+  render() {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <SemiCircleProgressBar percentage={33} />
       </div>
-    )
+    );
   }
 }

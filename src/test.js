@@ -1,7 +1,7 @@
-import ExampleComponent from './'
+import SemiCircleProgressBar from "./";
 
-describe('ExampleComponent', () => {
-  it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
-  })
-})
+describe("SemiCircleProgressBar", () => {
+  it("is truthy", () => {
+    expect(SemiCircleProgressBar).toBeTruthy();
+  });
+});
