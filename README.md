@@ -45,6 +45,10 @@ npm start
 
 This will start the create-react-app dev server locally on port 3000 and open the demo app in your default browser.
 
+## Credit
+
+This library is bootstrapped with the use of [Create-React-Library CLI](https://github.com/transitive-bullshit/create-react-library)
+
 ## License
 
 MIT © [ThomasBem](https://github.com/ThomasBem)
