@@ -1,6 +1,6 @@
 # react-progressbar-semicircle
 
-> Progress bar component in the shape of a semicircle - [Try it out!](https://thomasbem.github.io/react-progressbar-semicircle)
+> Progress bar component in the shape of a semicircle - [Try it out!](https://thomasbem.github.io/react-progressbar-semicircle/)
 
 [![NPM](https://img.shields.io/npm/v/react-progressbar-semicircle.svg)](https://www.npmjs.com/package/react-progressbar-semicircle) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -33,9 +33,9 @@ class Example extends Component {
 * `props.orientation` - string, optional, specifies the orientation of the semicircle. Currently supports `'up'` and `'down'` (default `'up'`)
 * `props.percentage` - number, _required_, percentage to be drawn on the bar
 
-## [Demo](https://thomasbem.github.io/react-progressbar-semicircle)
+## [Demo](https://thomasbem.github.io/react-progressbar-semicircle/)
 
-This repo comes with an example [create-react-app](https://github.com/facebookincubator/create-react-app) under `example/` that can be run locally to experiment with the component. This demo is also hosted [here](https://thomasbem.github.io/react-progressbar-semicircle).
+This repo comes with an example [create-react-app](https://github.com/facebookincubator/create-react-app) under `example/` that can be run locally to experiment with the component. This demo is also hosted [here](https://thomasbem.github.io/react-progressbar-semicircle/).
 
 ```bash
 cd example
