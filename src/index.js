@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import styles from "./styles.css";
-
 const SemiCircleProgress = ({
   stroke = "#02B732",
   strokeWidth = 10,
@@ -20,7 +18,7 @@ const SemiCircleProgress = ({
   const semiCirclePercentage = percentage * (circumference / 100);
 
   return (
-    <div className={styles.root} style={{ position: "relative" }}>
+    <div className="semicircle-container" style={{ position: "relative" }}>
       <svg width={diameter} height={diameter / 2}>
         <circle
           cx={coordinateForCircle}
@@ -53,7 +51,7 @@ const SemiCircleProgress = ({
       </svg>
       {showPercentValue && (
         <span
-          className="percent-value"
+          className="semicircle-percent-value"
           style={{
             left: `calc((${diameter / 2}px - ${
               percentage < 100 ? (percentage > 10 ? "16px" : "11.5px") : "20px"
