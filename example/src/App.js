@@ -7,6 +7,7 @@ export default class App extends Component {
     return (
       <div>
         <SemiCircleProgressBar percentage={33} />
+        <SemiCircleProgressBar percentage={33} showPercentValue />
       </div>
     );
   }
