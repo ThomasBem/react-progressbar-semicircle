@@ -1,8 +1,9 @@
 {
   "name": "react-progressbar-semicircle",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Progress bar component in the shape of a semicircle",
   "author": "ThomasBem",
+  "keywords": ["progress", "progressbar", "semicircle", "react"],
   "license": "MIT",
   "repository": "ThomasBem/react-progressbar-semicircle",
   "main": "dist/index.js",
@@ -42,7 +43,5 @@
     "rollup-plugin-postcss": "^1.1.0",
     "rollup-plugin-url": "^1.3.0"
   },
-  "files": [
-    "dist"
-  ]
+  "files": ["dist"]
 }
