@@ -32,6 +32,7 @@ class Example extends Component {
 * `props.diameter` - number, optional, diameter of the semicricle (default `200`)
 * `props.orientation` - string, optional, specifies the orientation of the semicircle. Currently supports `'up'` and `'down'` (default `'up'`)
 * `props.percentage` - number, _required_, percentage to be drawn on the bar
+* `props.showPercentValue` - boolean, optional, show percentage value as a number in the middle of semicircle (default `false`)
 
 ## [Demo](https://thomasbem.github.io/react-progressbar-semicircle/)
 

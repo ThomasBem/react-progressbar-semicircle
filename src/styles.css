@@ -1,0 +1,6 @@
+:local(.root) {
+  position: relative;
+}
+:local(.root) :local(.percentValue) {
+  position: absolute;
+}
