@@ -57,7 +57,6 @@ const SemiCircleProgress = ({
               percentage < 100 ? (percentage > 10 ? "16px" : "11.5px") : "20px"
             } ))`,
             bottom: orientation === "up" ? "0" : "none",
-            // top: showPercentValue ? "0" : "none",
             position: "absolute"
           }}
         >
