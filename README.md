@@ -19,20 +19,24 @@ import SemiCircleProgressBar from "react-progressbar-semicircle";
 
 class Example extends Component {
   render() {
-    return <SemiCircleProgressBar percentage={66} />;
+    return <SemiCircleProgressBar percentage={66} showPercentValue />;
   }
 }
 ```
 
+![SemiCircleProgressBarWithPercentValue](https://www.dropbox.com/s/b5c85vuz9jgvw3y/SemiCircleProgressBarWithPercentValue.png)
+
 ## API
 
-* `props.stroke` - string, optional, color of the progress bar. (default ![#02B732](https://placehold.it/15/02B732/000000?text=+) `#02B732`)
-* `props.strokeWidth` - number, optional, width of the progress bar (default `10`)
-* `props.background` - string, optional, background color for the progress bar (default ![#D0D0CE](https://placehold.it/15/D0D0CE/000000?text=+) `#D0D0CE`)
-* `props.diameter` - number, optional, diameter of the semicricle (default `200`)
-* `props.orientation` - string, optional, specifies the orientation of the semicircle. Currently supports `'up'` and `'down'` (default `'up'`)
-* `props.percentage` - number, _required_, percentage to be drawn on the bar
-* `props.showPercentValue` - boolean, optional, show percentage value as a number in the middle of semicircle (default `false`)
+| Property         | Description                                                   | Type    | Required | Default                                                            |
+| ---------------- | ------------------------------------------------------------- | ------- | -------- | ------------------------------------------------------------------ |
+| stroke           | Color of the progress bar                                     | string  | false    | ![#02B732](https://placehold.it/15/02B732/000000?text=+) `#02B732` |
+| strokeWidth      | Width of the progress bar                                     | number  | false    | `10`                                                               |
+| background       | Background color for the progress bar                         | string  | false    | ![#D0D0CE](https://placehold.it/15/D0D0CE/000000?text=+) `#D0D0CE` |
+| diameter         | Diameter of the semicricle                                    | number  | false    | `200`                                                              |
+| orientation      | Orientation of the semicircle. Supports `'up'` and `'down'`   | string  | false    | `'up'`                                                             |
+| percentage       | Percentage to be drawn on the bar                             | number  | true     |
+| showPercentValue | Show percentage value as a number in the middle of semicircle | boolean | false    | `false`                                                            |
 
 ## [Demo](https://thomasbem.github.io/react-progressbar-semicircle/)
 
