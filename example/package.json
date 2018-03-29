@@ -5,11 +5,15 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
+    "create-react-class": "^15.6.3",
     "prop-types": "^15.6.1",
+    "rc-slider": "^8.6.1",
     "react": "^16.2.0",
+    "react-color": "^2.14.0",
     "react-dom": "^16.2.0",
     "react-progressbar-semicircle": "link:..",
-    "react-scripts": "^1.1.1"
+    "react-scripts": "^1.1.1",
+    "react-toggle": "^4.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
