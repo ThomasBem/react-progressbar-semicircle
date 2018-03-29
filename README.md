@@ -24,7 +24,7 @@ class Example extends Component {
 }
 ```
 
-![SemiCircleProgressBarWithPercentValue](https://www.dropbox.com/s/b5c85vuz9jgvw3y/SemiCircleProgressBarWithPercentValue.png)
+![SemiCircleProgressBarWithPercentValue](https://www.dropbox.com/s/b5c85vuz9jgvw3y/SemiCircleProgressBarWithPercentValue.png?raw=1)
 
 ## API
 
