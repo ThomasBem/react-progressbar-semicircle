@@ -33,7 +33,7 @@ class Example extends Component {
 | stroke           | Color of the progress bar                                     | string  | false    | ![#02B732](https://placehold.it/15/02B732/000000?text=+) `#02B732` |
 | strokeWidth      | Width of the progress bar                                     | number  | false    | `10`                                                               |
 | background       | Background color for the progress bar                         | string  | false    | ![#D0D0CE](https://placehold.it/15/D0D0CE/000000?text=+) `#D0D0CE` |
-| diameter         | Diameter of the semicricle                                    | number  | false    | `200`                                                              |
+| diameter         | Diameter of the semicircle                                    | number  | false    | `200`                                                              |
 | orientation      | Orientation of the semicircle. Supports `'up'` and `'down'`   | string  | false    | `'up'`                                                             |
 | percentage       | Percentage to be drawn on the bar                             | number  | true     |
 | showPercentValue | Show percentage value as a number in the middle of semicircle | boolean | false    | `false`                                                            |
