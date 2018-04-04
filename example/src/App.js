@@ -36,7 +36,6 @@ export default class App extends Component {
   };
 
   render() {
-    console.log(this.state.orientation);
     return (
       <div className="example-container">
         <div>
