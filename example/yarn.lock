@@ -5701,9 +5701,9 @@ react-error-overlay@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.0.tgz#d198408a85b4070937a98667f500c832f86bd5d4"
 
-react-progressbar-semicircle@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/react-progressbar-semicircle/-/react-progressbar-semicircle-0.0.2.tgz#f5021320dac6d3387cf77db5c6bea6decb422af0"
+"react-progressbar-semicircle@link:..":
+  version "0.0.0"
+  uid ""
 
 react-scripts@^1.1.1:
   version "1.1.1"
