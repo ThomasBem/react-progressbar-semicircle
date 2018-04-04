@@ -12,14 +12,18 @@ const SemiCircleProgress = ({
 }) => {
   const coordinateForCircle = diameter / 2;
   const radius = (diameter - 2 * strokeWidth) / 2;
-  const circumference = 2 * Math.PI * radius * (180 / 360);
+  const circumference = Math.PI * radius;
   const rotation =
-    orientation === "down" ? "rotate(-180deg)" : "rotate3d(0,1,0, -180deg)";
+    orientation === "down" ? "rotate(180deg)" : "rotateY(180deg)";
   const semiCirclePercentage = percentage * (circumference / 100);
 
   return (
     <div className="semicircle-container" style={{ position: "relative" }}>
-      <svg width={diameter} height={diameter / 2}>
+      <svg
+        width={diameter}
+        height={diameter / 2}
+        style={{ transform: rotation, overflow: "hidden" }}
+      >
         <circle
           cx={coordinateForCircle}
           cy={coordinateForCircle}
@@ -29,9 +33,7 @@ const SemiCircleProgress = ({
           strokeWidth={strokeWidth}
           strokeDasharray={circumference}
           style={{
-            strokeDashoffset: circumference,
-            transformOrigin: "center center",
-            transform: rotation
+            strokeDashoffset: circumference
           }}
         />
         <circle
@@ -44,8 +46,8 @@ const SemiCircleProgress = ({
           strokeDasharray={circumference}
           style={{
             strokeDashoffset: semiCirclePercentage,
-            transformOrigin: "center center",
-            transform: rotation
+            transition:
+              "stroke-dashoffset .3s ease 0s, stroke-dasharray .3s ease 0s, stroke .3s"
           }}
         />
       </svg>
@@ -53,10 +55,10 @@ const SemiCircleProgress = ({
         <span
           className="semicircle-percent-value"
           style={{
-            left: `calc((${diameter / 2}px - ${
-              percentage < 100 ? (percentage > 10 ? "16px" : "11.5px") : "20px"
-            } ))`,
-            bottom: orientation === "up" ? "0" : "auto",
+            width: "100%",
+            left: "0",
+            textAlign: "center",
+            bottom: orientation === "down" ? "auto" : "0",
             position: "absolute"
           }}
         >
