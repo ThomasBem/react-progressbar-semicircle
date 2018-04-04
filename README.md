@@ -19,7 +19,7 @@ import SemiCircleProgressBar from "react-progressbar-semicircle";
 
 class Example extends Component {
   render() {
-    return <SemiCircleProgressBar percentage={66} showPercentValue />;
+    return <SemiCircleProgressBar percentage={33} showPercentValue />;
   }
 }
 ```
