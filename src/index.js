@@ -7,15 +7,27 @@ const SemiCircleProgress = ({
   background = "#D0D0CE",
   diameter = 200,
   orientation = "up",
+  direction = "right",
   showPercentValue = false,
   percentage
 }) => {
   const coordinateForCircle = diameter / 2;
   const radius = (diameter - 2 * strokeWidth) / 2;
   const circumference = Math.PI * radius;
-  const rotation =
-    orientation === "down" ? "rotate(180deg)" : "rotateY(180deg)";
   const semiCirclePercentage = percentage * (circumference / 100);
+
+  let rotation;
+  if (orientation === "down") {
+    if (direction === "left") {
+      rotation = "rotate(180deg) rotateY(180deg)";
+    } else {
+      rotation = "rotate(180deg)";
+    }
+  } else {
+    if (direction === "right") {
+      rotation = "rotateY(180deg)";
+    }
+  }
 
   return (
     <div className="semicircle-container" style={{ position: "relative" }}>
@@ -75,6 +87,7 @@ SemiCircleProgress.propTypes = {
   background: PropTypes.string,
   diameter: PropTypes.number,
   orientation: PropTypes.string,
+  direction: PropTypes.string,
   showPercentValue: PropTypes.bool,
   percentage: PropTypes.number
 };

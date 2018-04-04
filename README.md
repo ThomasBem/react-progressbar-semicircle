@@ -3,6 +3,7 @@
 > Progress bar component in the shape of a semicircle - [Try it out!](https://thomasbem.github.io/react-progressbar-semicircle/)
 
 [![NPM](https://img.shields.io/npm/v/react-progressbar-semicircle.svg)](https://www.npmjs.com/package/react-progressbar-semicircle) ![GZip Size](http://img.badgesize.io/https://unpkg.com/react-progressbar-semicircle/dist/index.js?compression=gzip&label=gzip%20size)
+
 ## Install
 
 ```bash
@@ -34,6 +35,7 @@ class Example extends Component {
 | background       | Background color for the progress bar                         | string  | false    | ![#D0D0CE](https://placehold.it/15/D0D0CE/000000?text=+) `#D0D0CE` |
 | diameter         | Diameter of the semicircle                                    | number  | false    | `200`                                                              |
 | orientation      | Orientation of the semicircle. Supports `'up'` and `'down'`   | string  | false    | `'up'`                                                             |
+| direction        | Direction of the progressbar. Supports `'left'` and `'right'` | string  | false    | `'right'`                                                          |
 | percentage       | Percentage to be drawn on the bar                             | number  | true     |
 | showPercentValue | Show percentage value as a number in the middle of semicircle | boolean | false    | `false`                                                            |
 
