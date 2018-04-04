@@ -2,8 +2,7 @@
 
 > Progress bar component in the shape of a semicircle - [Try it out!](https://thomasbem.github.io/react-progressbar-semicircle/)
 
-[![NPM](https://img.shields.io/npm/v/react-progressbar-semicircle.svg)](https://www.npmjs.com/package/react-progressbar-semicircle) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
+[![NPM](https://img.shields.io/npm/v/react-progressbar-semicircle.svg)](https://www.npmjs.com/package/react-progressbar-semicircle) ![GZip Size](http://img.badgesize.io/https://unpkg.com/react-progressbar-semicircle/dist/index.js?compression=gzip&label=gzip%20size)
 ## Install
 
 ```bash
