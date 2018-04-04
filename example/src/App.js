@@ -16,6 +16,7 @@ export default class App extends Component {
       background: "#D0D0CE",
       diameter: 300,
       orientation: "up",
+      direction: "right",
       showPercentValue: true,
       percentage: 75
     };
@@ -34,6 +35,13 @@ export default class App extends Component {
       this.setState({ orientation: "up" });
     }
   };
+  handleDirectionToggle = event => {
+    if (event.target.checked) {
+      this.setState({ direction: "left" });
+    } else {
+      this.setState({ direction: "right" });
+    }
+  };
 
   render() {
     return (
@@ -45,6 +53,7 @@ export default class App extends Component {
             background={this.state.background}
             diameter={this.state.diameter}
             orientation={this.state.orientation}
+            direction={this.state.direction}
             showPercentValue={this.state.showPercentValue}
             percentage={this.state.percentage}
           />
@@ -101,6 +110,13 @@ export default class App extends Component {
               onChange={event => this.handleOrientationToggle(event)}
             />
             <span>Flip progress bar</span>
+          </div>
+          <div className="direction-toggle">
+            <Toggle
+              defaultChecked={false}
+              onChange={event => this.handleDirectionToggle(event)}
+            />
+            <span>Switch direction</span>
           </div>
         </div>
       </div>

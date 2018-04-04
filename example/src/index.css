@@ -52,7 +52,16 @@
 .orientation-toggle {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 .orientation-toggle span {
+  margin-left: 10px;
+}
+
+.direction-toggle {
+  display: flex;
+  align-items: center;
+}
+.direction-toggle span {
   margin-left: 10px;
 }
