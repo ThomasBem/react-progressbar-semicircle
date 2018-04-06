@@ -86,10 +86,10 @@ SemiCircleProgress.propTypes = {
   strokeWidth: PropTypes.number,
   background: PropTypes.string,
   diameter: PropTypes.number,
-  orientation: PropTypes.string,
-  direction: PropTypes.string,
+  orientation: PropTypes.oneOf(["up", "down"]),
+  direction: PropTypes.oneOf(["left", "right"]),
   showPercentValue: PropTypes.bool,
-  percentage: PropTypes.number
+  percentage: PropTypes.number.isRequired
 };
 
 export default SemiCircleProgress;
