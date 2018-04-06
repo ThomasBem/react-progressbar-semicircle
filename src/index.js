@@ -81,6 +81,30 @@ const SemiCircleProgress = ({
   );
 };
 
+function percentageValidation(isRequired) {
+  return function(props, propName, componentName) {
+    const prop = props[propName];
+    if (prop == null) {
+      if (isRequired) {
+        throw new Error("Percentage is a required prop.");
+      }
+    } else {
+      if (typeof prop !== "number") {
+        return new Error(
+          "Invalid percentage. Must be a number between 0 and 100."
+        );
+      }
+      if (props[propName] < 0 || props[propName] > 100) {
+        return new Error(
+          "Invalid percentage. Must be a number between 0 and 100."
+        );
+      }
+    }
+  };
+}
+
+const percentageisRequired = percentageValidation(true);
+
 SemiCircleProgress.propTypes = {
   stroke: PropTypes.string,
   strokeWidth: PropTypes.number,
@@ -89,7 +113,7 @@ SemiCircleProgress.propTypes = {
   orientation: PropTypes.oneOf(["up", "down"]),
   direction: PropTypes.oneOf(["left", "right"]),
   showPercentValue: PropTypes.bool,
-  percentage: PropTypes.number.isRequired
+  percentage: percentageisRequired
 };
 
 export default SemiCircleProgress;
