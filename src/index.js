@@ -14,7 +14,16 @@ const SemiCircleProgress = ({
   const coordinateForCircle = diameter / 2;
   const radius = (diameter - 2 * strokeWidth) / 2;
   const circumference = Math.PI * radius;
-  const semiCirclePercentage = percentage * (circumference / 100);
+
+  let percentageValue;
+  if (percentage > 100) {
+    percentageValue = 100;
+  } else if (percentage < 0) {
+    percentageValue = 0;
+  } else {
+    percentageValue = percentage;
+  }
+  const semiCirclePercentage = percentageValue * (circumference / 100);
 
   let rotation;
   if (orientation === "down") {
