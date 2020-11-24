@@ -12,7 +12,7 @@ const SemiCircleProgress = ({
   percentage
 }) => {
   const coordinateForCircle = diameter / 2;
-  const radius = (diameter - 2 * strokeWidth) / 2;
+  const radius = (diameter - strokeWidth) / 2;
   const circumference = Math.PI * radius;
 
   let percentageValue;
