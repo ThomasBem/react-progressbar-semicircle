@@ -1,45 +1,47 @@
-import React, { Component } from "react";
+import React, { Component } from 'react'
 
-import SemiCircleProgressBar from "react-progressbar-semicircle";
-import { TwitterPicker } from "react-color";
-import Slider from "rc-slider";
-import Toggle from "react-toggle";
+import SemiCircleProgressBar from 'react-progressbar-semicircle'
+import { TwitterPicker } from 'react-color'
+import Slider from 'rc-slider'
+import Toggle from 'react-toggle'
 
-import "rc-slider/assets/index.css";
+import 'rc-slider/assets/index.css'
 
 export default class App extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      stroke: "#02B732",
+      stroke: '#02B732',
       strokeWidth: 10,
-      background: "#D0D0CE",
+      background: '#D0D0CE',
       diameter: 300,
-      orientation: "up",
-      direction: "right",
+      orientation: 'up',
+      direction: 'right',
       showPercentValue: true,
       percentage: 75
-    };
+    }
   }
 
   handleStrokeColorChange = ({ hex }) => this.setState({ stroke: hex });
   handleBackgroundColorChange = ({ hex }) => this.setState({ background: hex });
   handleShowPercentValue = event =>
     this.setState({ showPercentValue: !this.state.showPercentValue });
+
   handleStrokeWidthChange = strokeWidth => this.setState({ strokeWidth });
   handlePercentChange = percentage => this.setState({ percentage });
   handleOrientationToggle = event => {
     if (event.target.checked) {
-      this.setState({ orientation: "down" });
+      this.setState({ orientation: 'down' })
     } else {
-      this.setState({ orientation: "up" });
+      this.setState({ orientation: 'up' })
     }
   };
+
   handleDirectionToggle = event => {
     if (event.target.checked) {
-      this.setState({ direction: "left" });
+      this.setState({ direction: 'left' })
     } else {
-      this.setState({ direction: "right" });
+      this.setState({ direction: 'right' })
     }
   };
 
@@ -120,6 +122,6 @@ export default class App extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
