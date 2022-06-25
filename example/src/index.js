@@ -1,10 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-import "./index.css";
-import "react-toggle/style.css";
-import App from "./App";
+import './index.css'
+import 'react-toggle/style.css'
+import App from './App'
 
-require("create-react-class");
+require('create-react-class')
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'))
