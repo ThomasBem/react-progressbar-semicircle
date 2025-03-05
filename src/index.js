@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 const SemiCircleProgress = ({
-  stroke = "#02B732",
+  stroke = "#0170FE",
   strokeWidth = 10,
   background = "#D0D0CE",
   diameter = 200,
